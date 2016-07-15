@@ -1,0 +1,6 @@
+[
+  {"id":1, "identifier":"fd1234fd", "name":"Sandbox1", "description":"prima Sandbox", "icon":"byte_array"},
+  {"id":2, "identifier":"fd5678fd", "name":"Sandbox2", "description":"seconda Sandbox", "icon":"pippo2.png"},
+  {"id":3, "identifier":"fd5678fd", "name":"Sandbox3", "description":"terza Sandbox", "icon":"pippo3.png"},
+  {"id":4, "identifier":"fd5678fd", "name":"Sandbox4", "description":"quarta Sandbox", "icon":"pippo4.png"}
+]

@@ -1,0 +1,9 @@
+<div class="col-md-12 actions-bar">
+    <actions-bar-button image-class="refresh-button" tooltip="Ricarica lista" visible="!editable" enabled="true"></actions-bar-button>
+    <actions-bar-button image-class="add-button" tooltip="Nuova Sandbox" visible="!editable" enabled="true"></actions-bar-button>
+    <actions-bar-button image-class="edit-button" tooltip="Modifica Sandbox" visible="!editable" enabled="$parent.tmpSandbox"></actions-bar-button>
+    <actions-bar-button image-class="cancel-button" tooltip="Annulla modifiche Sandbox" visible="editable" enabled="$parent.tmpSandbox"></actions-bar-button>
+    <actions-bar-button image-class="save-button" tooltip="Salva Sandbox" visible="editable" enabled="$parent.tmpSandbox && $parent.isValidSandbox"></actions-bar-button>
+    <!-- per adesso non si permette di eliminare una sandbox esistente
+    <actions-bar-button image-class="delete-button" tooltip="Elimina sandbox" visible="!editable && sandbox" enabled="true"></actions-bar-button>-->
+</div>

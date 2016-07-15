@@ -1,0 +1,7 @@
+<!-- template dell'item che va nella lista -->
+<div class="col-md-12" style="margin: 2px;" ng-class="{ selected: isSelectedSandboxItem(sandbox) == true,  'unselected':  isSelectedSandboxItem(sandbox) == false}" >
+    <div class="col-md-1 sandbox-list-item">
+        <img style="width: 22px;height: 22px;" ng-src="{{setImage(sandbox)}}">
+    </div>
+    <div class="col-md-11 sandbox-list-item">{{sandbox.name}}</div>
+</div>

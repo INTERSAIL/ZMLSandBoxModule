@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="ZMLSandBox">
+<head>
+  <meta charset="utf-8">
+  <title>ZMLSandBox</title>
+
+  <link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="external/css/jquery-ui.css">
+  <link rel="stylesheet" href="external/css/loading-bar.css">
+
+  <script type="text/javascript" src="external/js/jquery.min.js"></script>
+  <script type="text/javascript" src="external/js/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="external/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="external/js/angular.min.js"></script>
+  <script type="text/javascript" src="external/js/angular-route.js"></script>
+  <script type="text/javascript" src="external/js/loading-bar.js"></script>
+
+
+  <!--link rel="css" type="text/css" href="http://code.famo.us/famous0.2/famous.css"/-->
+  <!--script type="text/javascript" src="http://code.famo.us/famous/0.2/famous.min.js"></script-->
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/sandbox-view.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/action-bar.css">
+
+
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="routes.js"></script>
+  <script type="text/javascript" src="configuration.js"></script>
+
+  <script type="text/javascript" src="js/controllers/sandbox-list-controller.js"></script>
+  <script type="text/javascript" src="js/controllers/sandbox-info-controller.js"></script>
+  <script type="text/javascript" src="js/controllers/sandbox-view-controller.js"></script>
+  <script type="text/javascript" src="js/controllers/sandbox-action-bar-controller.js"></script>
+  <script type="text/javascript" src="js/controllers/sandbox-list-item-controller.js"></script>
+
+  <script type="text/javascript" src="js/directive/sandbox-action-bar.js"></script>
+  <script type="text/javascript" src="js/directive/sandbox-list-item.js"></script>
+  <script type="text/javascript" src="js/directive/sandbox-list.js"></script>
+  <script type="text/javascript" src="js/directive/sandbox-info.js"></script>
+  <script type="text/javascript" src="js/directive/sandbox-view.js"></script>
+  <script type="text/javascript" src="js/directive/elements/actions-bar-button.js"></script>
+
+
+  <script type="text/javascript" src="js/services/operation-in-progress-panel.js"></script>
+  <script type="text/javascript" src="js/services/zmlsandbox-helper.js"></script>
+  <script type="text/javascript" src="js/services/yes-no-cancel.dialog.js"></script>
+  <script type="text/javascript" src="js/services/http-helper.js"></script>
+  <script type="text/javascript" src="js/services/zmlsandbox-helper.js"></script>
+  <script type="text/javascript" src="js/services/utils.js"></script>
+
+
+</head>
+<body>
+  <div class="col-lg-12 no-right-pad no-left-pad container" ng-view></div>
+</body>
+</html>
