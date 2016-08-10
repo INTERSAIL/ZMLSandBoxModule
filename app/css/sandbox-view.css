@@ -77,3 +77,18 @@
     box-sizing: border-box;
     position: relative;
 }
+
+
+.h2-sandbox{
+    font-size: 30px;
+    border-bottom: aliceblue;
+    border: solid;
+    background-color: bisque;
+    border-color: bisque;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 60px;
+    padding-top: 7px;
+}
