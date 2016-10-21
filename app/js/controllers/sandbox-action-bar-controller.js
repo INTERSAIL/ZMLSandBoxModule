@@ -4,6 +4,7 @@ angular.module("ZMLSandBox")
         $scope.refresh = function(){
                 ZMLSandboxHelper.list({
                     successFunction:function(data){
+                        angular.element("#imgIcon").val(null);
                         $scope.$parent.errors = null;
                         $scope.$parent.sandboxList = data;
                         $scope.$parent.selectedSandbox = $scope.$parent.sandboxList[0];
@@ -11,6 +12,7 @@ angular.module("ZMLSandBox")
                         $scope.$parent.isValidSandbox = false;
                     },
                     errorFunction: function(data){
+                        angular.element("#imgIcon").val(null);
                         $scope.$parent.sandboxList = null;
                         $scope.$parent.selectedSandbox = null;
                         $scope.$parent.tmpSandbox = Utils.cleanTmpSandbox();
@@ -63,7 +65,7 @@ angular.module("ZMLSandBox")
 
         $scope.undoSandbox = function(){
                 $scope.$parent.editable = false;
-                $scope.$parent.tmpSandbox = Utils.cloneSandbox($scope.$parent.selectedSandbox);
+                $scope.$parent.tmpSandbox = null;
                 $scope.$parent.isValidSandbox = false;
                 angular.element("#imgIcon").val(null);
 
