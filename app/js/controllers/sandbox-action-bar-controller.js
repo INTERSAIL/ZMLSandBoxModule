@@ -66,6 +66,7 @@ angular.module("ZMLSandBox")
         $scope.undoSandbox = function(){
                 $scope.$parent.editable = false;
                 $scope.$parent.tmpSandbox = null;
+                $scope.$parent.selectedSandbox = null;
                 $scope.$parent.isValidSandbox = false;
                 angular.element("#imgIcon").val(null);
 
