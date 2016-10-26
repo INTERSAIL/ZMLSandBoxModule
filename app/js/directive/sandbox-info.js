@@ -16,7 +16,7 @@ angular.module('ZMLSandBox')
                     var input = event.target;
                     var fr = new FileReader();
                     fr.onload = function(){
-                        scope.tmpSandbox.icon = fr.result.substr(fr.result.indexOf(',') + 1);;
+                        scope.tmpSandbox.icon = fr.result.substr(fr.result.indexOf(',') + 1);
                     };
                     fr.readAsDataURL(input.files[0]);
                 };

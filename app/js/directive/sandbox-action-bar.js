@@ -5,7 +5,8 @@ angular.module('ZMLSandBox')
             templateUrl: "templates/sandbox-action-bar.html",
             scope:{
               imageClass: "@",
-              editable: "="
+              editable: "=",
+              isValidSandbox: "="
             },
             controller: "sandboxActionBarController",
             link: function(scope, element, args, parentController) {

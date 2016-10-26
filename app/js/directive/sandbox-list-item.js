@@ -16,7 +16,7 @@ angular.module("ZMLSandBox")
                 scope.isSelectedSandboxItem = function(sandbox){
                     var selSandbox = parentController.getSelectedSandbox();
                     return (selSandbox && selSandbox.id == sandbox.id);
-                }
+                };
 
                 scope.setImage = function(sandbox){
                     if(sandbox.icon == null)
